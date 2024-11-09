@@ -1,0 +1,22 @@
+.flashcard {
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.flipping {
+  transform: rotateY(120deg);
+}
+
+.flashcard-content {
+  position: relative;
+}
+
+.flashcard-content > * {
+  backface-visibility: hidden;
+}
+
+.flashcard-content .question,
+.flashcard-content .answer {
+  position: absolute;
+  width: 100%;
+}
